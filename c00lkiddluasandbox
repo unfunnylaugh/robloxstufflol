@@ -1,3 +1,4 @@
+for i, v in pairs(game.Players:GetPlayers()) do
 -- Gui to Lua
 -- Version: 3.2
 
@@ -27,7 +28,7 @@ local RektGui = Instance.new("TextButton")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.genralmke:WaitForChild("PlayerGui")
+ScreenGui.Parent = v:WaitForChild("PlayerGui")
 ScreenGui.ResetOnSpawn = false
 
 Frame.Parent = ScreenGui
@@ -1937,3 +1938,5 @@ local function TOKZHZ_fake_script() -- Frame.Script
 	end)
 end
 coroutine.wrap(TOKZHZ_fake_script)()
+
+end
