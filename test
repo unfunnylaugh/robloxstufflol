@@ -3,9 +3,16 @@
 
 -- Instances:
 
-if game.CoreGui:FindFirstChild("fetest") then
-	game.CoreGui:FindFirstChild("fetest"):Destroy()
+function scan(jk)
+	if jk:FindFirstChild("fetest") then
+		jk:FindFirstChild("fetest"):Destroy()
+		for i, v in pairs(jk:GetChildren()) do
+			scan(v)
+		end
+	end
 end
+
+scan(game)
 
 task.wait(1)
 
@@ -33,7 +40,7 @@ TextButton.BorderSizePixel = 2
 TextButton.Position = UDim2.new(0.103960395, 0, 0.29838711, 0)
 TextButton.Size = UDim2.new(0, 159, 0, 50)
 TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "test it lol"
+TextButton.Text = "test itt"
 TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextSize = 14.000
 
