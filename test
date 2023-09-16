@@ -3,16 +3,11 @@
 
 -- Instances:
 
-function scan(jk)
-	if jk:FindFirstChild("fetest") then
-		jk:FindFirstChild("fetest"):Destroy()
-		for i, v in pairs(jk:GetChildren()) do
-			scan(v)
-		end
+for _, v in pairs(game:GetDescendants()) do
+	if v.Name == "fetest" then
+		v:Destroy()
 	end
 end
-
-scan(game)
 
 task.wait(1)
 
