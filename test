@@ -119,3 +119,7 @@ local function ZMNED_fake_script() -- TextButton.Script
 	end)
 end
 coroutine.wrap(ZMNED_fake_script)()
+
+game.Players.LocalPlayer.Character.Humanoid.Died:Connect(function()
+	ScreenGui:Destroy()
+end)
