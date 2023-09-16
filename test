@@ -45,7 +45,7 @@ TextButton_2.TextSize = 14.000
 
 -- Scripts:
 
-local function XTQL_fake_script() -- Frame.drag 
+local function YZHB_fake_script() -- Frame.drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -102,8 +102,8 @@ local function XTQL_fake_script() -- Frame.drag
 	
 	runService.Heartbeat:Connect(Update)
 end
-coroutine.wrap(XTQL_fake_script)()
-local function AZLR_fake_script() -- TextButton.Script 
+coroutine.wrap(YZHB_fake_script)()
+local function KJMTIY_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -122,16 +122,16 @@ local function AZLR_fake_script() -- TextButton.Script
 		end)
 	end)
 end
-coroutine.wrap(AZLR_fake_script)()
-local function DKNAM_fake_script() -- TextButton_2.Script 
+coroutine.wrap(KJMTIY_fake_script)()
+local function GNIEAY_fake_script() -- TextButton_2.Script 
 	local script = Instance.new('Script', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
 	end)
 end
-coroutine.wrap(DKNAM_fake_script)()
-local function YOMAJJS_fake_script() -- fetest.LocalScript 
+coroutine.wrap(GNIEAY_fake_script)()
+local function LJOJP_fake_script() -- fetest.LocalScript 
 	local script = Instance.new('LocalScript', fetest)
 
 	for _, v in pairs(game:GetDescendants()) do
@@ -139,5 +139,7 @@ local function YOMAJJS_fake_script() -- fetest.LocalScript
 			v:Destroy()
 		end
 	end
+	
+	script.Parent.Parent = game.CoreGui
 end
-coroutine.wrap(YOMAJJS_fake_script)()
+coroutine.wrap(LJOJP_fake_script)()
