@@ -3,25 +3,18 @@
 
 -- Instances:
 
-for _, v in pairs(game:GetDescendants()) do
-	if v.Name == "fetest" then
-		v:Destroy()
-	end
-end
-
-task.wait(1)
-
-local ScreenGui = Instance.new("ScreenGui")
+local fetest = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
 
 --Properties:
 
-ScreenGui.Parent = game.CoreGui
-ScreenGui.Name = "fetest"
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+fetest.Name = "fetest"
+fetest.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+fetest.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Frame.Parent = ScreenGui
+Frame.Parent = fetest
 Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderColor3 = Color3.fromRGB(255, 0, 0)
 Frame.BorderSizePixel = 2
@@ -32,16 +25,27 @@ TextButton.Parent = Frame
 TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.BorderColor3 = Color3.fromRGB(255, 0, 0)
 TextButton.BorderSizePixel = 2
-TextButton.Position = UDim2.new(0.103960395, 0, 0.29838711, 0)
+TextButton.Position = UDim2.new(0.103960395, 0, 0, 0)
 TextButton.Size = UDim2.new(0, 159, 0, 50)
 TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "test itt"
+TextButton.Text = "message test"
 TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextSize = 14.000
 
+TextButton_2.Parent = Frame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_2.BorderSizePixel = 2
+TextButton_2.Position = UDim2.new(0.103960395, 0, 0.59677422, 0)
+TextButton_2.Size = UDim2.new(0, 159, 0, 50)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "mass rep**t"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextSize = 14.000
+
 -- Scripts:
 
-local function SWUDIKG_fake_script() -- Frame.drag 
+local function WBLGU_fake_script() -- Frame.drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -98,8 +102,8 @@ local function SWUDIKG_fake_script() -- Frame.drag
 	
 	runService.Heartbeat:Connect(Update)
 end
-coroutine.wrap(SWUDIKG_fake_script)()
-local function ZMNED_fake_script() -- TextButton.Script 
+coroutine.wrap(WBLGU_fake_script)()
+local function LUTEAH_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -118,9 +122,44 @@ local function ZMNED_fake_script() -- TextButton.Script
 		end)
 	end)
 end
-coroutine.wrap(ZMNED_fake_script)()
---[[
-game.Players.LocalPlayer.Character.Humanoid.Died:Connect(function()
-	ScreenGui:Destroy()
-end)
-]]
+coroutine.wrap(LUTEAH_fake_script)()
+local function ZSBDQ_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i, speaker in pairs(game.Players:GetPlayers()) do
+			if speaker.Name ~= game.Players.LocalPlayer.Name then
+				local players = game.Players
+	
+				while wait() do
+					players:ReportAbuse(players[speaker.Name],"Swearing",'He is breaking roblox TOS')
+					wait()
+					players:ReportAbuse(players[speaker.Name],"Swearing",'He said bad words')
+					wait()
+					players:ReportAbuse(players[speaker.Name],"Bullying",'He bullied me')
+					wait()
+					players:ReportAbuse(players[speaker.Name],"Bullying",'He bullied my friend')
+					wait()
+					players:ReportAbuse(players[speaker.Name],"Scamming",'He scammed me')
+					wait()
+					players:ReportAbuse(players[speaker.Name],"Scamming",'He is sending scam links')
+					wait()
+					players:ReportAbuse(players[speaker.Name],"Dating",'He is dating in another game')
+					wait()
+					players:ReportAbuse(players[speaker.Name],"Dating",'He is dating another player in this game')
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(ZSBDQ_fake_script)()
+local function RFOKAPU_fake_script() -- fetest.LocalScript 
+	local script = Instance.new('LocalScript', fetest)
+
+	for _, v in pairs(game:GetDescendants()) do
+		if v.Name == "fetest" and v ~= script.Parent then
+			v:Destroy()
+		end
+	end
+end
+coroutine.wrap(RFOKAPU_fake_script)()
