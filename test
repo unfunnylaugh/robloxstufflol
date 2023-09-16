@@ -141,10 +141,3 @@ local function ZUFFGU_fake_script() -- fetest.LocalScript
 	end
 end
 coroutine.wrap(ZUFFGU_fake_script)()
-local function MXEAF_fake_script() -- fetest.Script 
-	local script = Instance.new('Script', fetest)
-
-	
-	script.Parent.Parent = game.CoreGui
-end
-coroutine.wrap(MXEAF_fake_script)()
