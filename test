@@ -19,7 +19,7 @@ Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderColor3 = Color3.fromRGB(255, 0, 0)
 Frame.BorderSizePixel = 2
 Frame.Position = UDim2.new(0.260428399, 0, 0.275510192, 0)
-Frame.Size = UDim2.new(0, 202, 0, 124)
+Frame.Size = UDim2.new(0, 202, 0, 173)
 
 TextButton.Parent = Frame
 TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -36,16 +36,16 @@ TextButton_2.Parent = Frame
 TextButton_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_2.BorderColor3 = Color3.fromRGB(255, 0, 0)
 TextButton_2.BorderSizePixel = 2
-TextButton_2.Position = UDim2.new(0.103960395, 0, 0.59677422, 0)
+TextButton_2.Position = UDim2.new(0.103960395, 0, 0.405789584, 0)
 TextButton_2.Size = UDim2.new(0, 159, 0, 50)
 TextButton_2.Font = Enum.Font.SourceSans
-TextButton_2.Text = "mass rep**t"
+TextButton_2.Text = "fly"
 TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_2.TextSize = 14.000
 
 -- Scripts:
 
-local function WLVIZLD_fake_script() -- Frame.drag 
+local function XTQL_fake_script() -- Frame.drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -102,8 +102,8 @@ local function WLVIZLD_fake_script() -- Frame.drag
 	
 	runService.Heartbeat:Connect(Update)
 end
-coroutine.wrap(WLVIZLD_fake_script)()
-local function TFRWIC_fake_script() -- TextButton.Script 
+coroutine.wrap(XTQL_fake_script)()
+local function AZLR_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -122,38 +122,16 @@ local function TFRWIC_fake_script() -- TextButton.Script
 		end)
 	end)
 end
-coroutine.wrap(TFRWIC_fake_script)()
-local function KGYOTGZ_fake_script() -- TextButton_2.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_2)
+coroutine.wrap(AZLR_fake_script)()
+local function DKNAM_fake_script() -- TextButton_2.Script 
+	local script = Instance.new('Script', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		for i, speaker in pairs(game.Players:GetPlayers()) do
-			if speaker.Name ~= game.Players.LocalPlayer.Name then
-				local players = game.Players
-	
-				while wait() do
-					players:ReportAbuse(players[speaker.Name],"Swearing",'He is breaking roblox TOS')
-					wait()
-					players:ReportAbuse(players[speaker.Name],"Swearing",'He said bad words')
-					wait()
-					players:ReportAbuse(players[speaker.Name],"Bullying",'He bullied me')
-					wait()
-					players:ReportAbuse(players[speaker.Name],"Bullying",'He bullied my friend')
-					wait()
-					players:ReportAbuse(players[speaker.Name],"Scamming",'He scammed me')
-					wait()
-					players:ReportAbuse(players[speaker.Name],"Scamming",'He is sending scam links')
-					wait()
-					players:ReportAbuse(players[speaker.Name],"Dating",'He is dating in another game')
-					wait()
-					players:ReportAbuse(players[speaker.Name],"Dating",'He is dating another player in this game')
-				end
-			end
-		end
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
 	end)
 end
-coroutine.wrap(KGYOTGZ_fake_script)()
-local function SCXQZ_fake_script() -- fetest.LocalScript 
+coroutine.wrap(DKNAM_fake_script)()
+local function YOMAJJS_fake_script() -- fetest.LocalScript 
 	local script = Instance.new('LocalScript', fetest)
 
 	for _, v in pairs(game:GetDescendants()) do
@@ -162,4 +140,4 @@ local function SCXQZ_fake_script() -- fetest.LocalScript
 		end
 	end
 end
-coroutine.wrap(SCXQZ_fake_script)()
+coroutine.wrap(YOMAJJS_fake_script)()
