@@ -11,7 +11,7 @@ local TextButton_2 = Instance.new("TextButton")
 --Properties:
 
 fetest.Name = "fetest"
-fetest.Parent = game.CoreGui
+fetest.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 fetest.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = fetest
@@ -45,7 +45,7 @@ TextButton_2.TextSize = 14.000
 
 -- Scripts:
 
-local function WBLGU_fake_script() -- Frame.drag 
+local function WLVIZLD_fake_script() -- Frame.drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -102,8 +102,8 @@ local function WBLGU_fake_script() -- Frame.drag
 	
 	runService.Heartbeat:Connect(Update)
 end
-coroutine.wrap(WBLGU_fake_script)()
-local function LUTEAH_fake_script() -- TextButton.Script 
+coroutine.wrap(WLVIZLD_fake_script)()
+local function TFRWIC_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -116,14 +116,14 @@ local function LUTEAH_fake_script() -- TextButton.Script
 			end)
 		end
 		spawn(function()
-			for i, _ in pairs(game.Players:GetPlayers()) do
-				a(_:FindFirstChild("PlayerGui"), "funny")
+			for _, v in pairs(game.Players:GetPlayers()) do
+				a(game.CoreGui, "funny")
 			end
 		end)
 	end)
 end
-coroutine.wrap(LUTEAH_fake_script)()
-local function ZSBDQ_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(TFRWIC_fake_script)()
+local function KGYOTGZ_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -152,8 +152,8 @@ local function ZSBDQ_fake_script() -- TextButton_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ZSBDQ_fake_script)()
-local function RFOKAPU_fake_script() -- fetest.LocalScript 
+coroutine.wrap(KGYOTGZ_fake_script)()
+local function SCXQZ_fake_script() -- fetest.LocalScript 
 	local script = Instance.new('LocalScript', fetest)
 
 	for _, v in pairs(game:GetDescendants()) do
@@ -162,4 +162,4 @@ local function RFOKAPU_fake_script() -- fetest.LocalScript
 		end
 	end
 end
-coroutine.wrap(RFOKAPU_fake_script)()
+coroutine.wrap(SCXQZ_fake_script)()
