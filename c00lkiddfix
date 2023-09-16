@@ -27,7 +27,7 @@ local RektGui = Instance.new("TextButton")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.Parent = game.CoreGui
 ScreenGui.ResetOnSpawn = false
 
 Frame.Parent = ScreenGui
@@ -251,61 +251,63 @@ local function UJYA_fake_script() -- _666.LocalScript
 	local script = Instance.new('LocalScript', _666)
 
 	script.Parent.MouseButton1Down:Connect(function()
-		for i,v in next,workspace:children''do
-			if(v:IsA'BasePart')then
-				me=v;
-				bbg=Instance.new('BillboardGui',me);
-				bbg.Name='stuf';
-				bbg.Adornee=me;
-				bbg.Size=UDim2.new(2.5,0,2.5,0)
-				--bbg.StudsOffset=Vector3.new(0,2,0)
-				tlb=Instance.new'TextLabel';
-				tlb.Text='666 666 666 666 666 666';
-				tlb.Font='SourceSansBold';
-				tlb.FontSize='Size48';
-				tlb.TextColor3=Color3.new(1,0,0);
-				tlb.Size=UDim2.new(1.25,0,1.25,0);
-				tlb.Position=UDim2.new(-0.125,-22,-1.1,0);
-				tlb.BackgroundTransparency=1;
-				tlb.Parent=bbg;
-			end;end;
-		function xds(dd)
-			for i,v in next,dd:children''do
+		spawn(pcall(function()
+			for i,v in next,workspace:children''do
 				if(v:IsA'BasePart')then
-					v.BrickColor=BrickColor.new'Really black';
-					v.TopSurface='Smooth';
-					v.BottomSurface='Smooth';
-					s=Instance.new('SelectionBox',v);
-					s.Adornee=v;
-					s.Color=BrickColor.new'Really red';
-					a=Instance.new('PointLight',v);
-					a.Color=Color3.new(1,0,0);
-					a.Range=15;
-					a.Brightness=5;
-					f=Instance.new('Fire',v);
-					f.Size=11;
-					f.Heat=12;
-				end;
-				game.Lighting.TimeOfDay=0;
-				game.Lighting.Brightness=0;
-				game.Lighting.ShadowColor=Color3.new(0,0,0);
-				game.Lighting.Ambient=Color3.new(1,0,0);
-				game.Lighting.FogEnd=200;
-				game.Lighting.FogColor=Color3.new(0,0,0);
-				local dec = 'http://www.roblox.com/asset/?id=19399245';
-				local fac = {'Front', 'Back', 'Left', 'Right', 'Top', 'Bottom'}
-				--coroutine.wrap(function()
-				--for _,__ in pairs(fac) do
-				--local ddec = Instance.new("Decal", v)
-				--ddec.Face = __
-				--ddec.Texture = dec
-				--end end)()
-				if #(v:GetChildren())>0 then
-					xds(v)
+					me=v;
+					bbg=Instance.new('BillboardGui',me);
+					bbg.Name='stuf';
+					bbg.Adornee=me;
+					bbg.Size=UDim2.new(2.5,0,2.5,0)
+					--bbg.StudsOffset=Vector3.new(0,2,0)
+					tlb=Instance.new'TextLabel';
+					tlb.Text='666 666 666 666 666 666';
+					tlb.Font='SourceSansBold';
+					tlb.FontSize='Size48';
+					tlb.TextColor3=Color3.new(1,0,0);
+					tlb.Size=UDim2.new(1.25,0,1.25,0);
+					tlb.Position=UDim2.new(-0.125,-22,-1.1,0);
+					tlb.BackgroundTransparency=1;
+					tlb.Parent=bbg;
+				end;end;
+			function xds(dd)
+				for i,v in next,dd:children''do
+					if(v:IsA'BasePart')then
+						v.BrickColor=BrickColor.new'Really black';
+						v.TopSurface='Smooth';
+						v.BottomSurface='Smooth';
+						s=Instance.new('SelectionBox',v);
+						s.Adornee=v;
+						s.Color=BrickColor.new'Really red';
+						a=Instance.new('PointLight',v);
+						a.Color=Color3.new(1,0,0);
+						a.Range=15;
+						a.Brightness=5;
+						f=Instance.new('Fire',v);
+						f.Size=11;
+						f.Heat=12;
+					end;
+					game.Lighting.TimeOfDay=0;
+					game.Lighting.Brightness=0;
+					game.Lighting.ShadowColor=Color3.new(0,0,0);
+					game.Lighting.Ambient=Color3.new(1,0,0);
+					game.Lighting.FogEnd=200;
+					game.Lighting.FogColor=Color3.new(0,0,0);
+					local dec = 'http://www.roblox.com/asset/?id=19399245';
+					local fac = {'Front', 'Back', 'Left', 'Right', 'Top', 'Bottom'}
+					--coroutine.wrap(function()
+					--for _,__ in pairs(fac) do
+					--local ddec = Instance.new("Decal", v)
+					--ddec.Face = __
+					--ddec.Texture = dec
+					--end end)()
+					if #(v:GetChildren())>0 then
+						xds(v)
+					end
 				end
 			end
-		end
-		xds(game.Workspace)
+			xds(game.Workspace)
+		end))
 	end)
 end
 coroutine.wrap(UJYA_fake_script)()
@@ -313,19 +315,21 @@ local function CUDSYD_fake_script() -- HardStyleSong.LocalScript
 	local script = Instance.new('LocalScript', HardStyleSong)
 
 	script.Parent.MouseButton1Down:Connect(function()
-		local s = Instance.new("Sound")
-	
-		s.Name = "Sound"
-		s.SoundId = "http://www.roblox.com/asset/?id=8680587619"
-		s.Volume = 100
-		s.Looped = true
-		s.archivable = false
-	
-		s.Parent = game.Workspace
-	
-		wait(3)
-	
-		s:play()
+		spawn(pcall(function() 
+			local s = Instance.new("Sound")
+
+			s.Name = "Sound"
+			s.SoundId = "http://www.roblox.com/asset/?id=8680587619"
+			s.Volume = 100
+			s.Looped = true
+			s.archivable = false
+
+			s.Parent = game.Workspace
+
+			wait(3)
+
+			s:play()
+		end))
 	end)
 end
 coroutine.wrap(CUDSYD_fake_script)()
@@ -333,131 +337,133 @@ local function QIWDYZW_fake_script() -- Shedletskyify.LocalScript
 	local script = Instance.new('LocalScript', Shedletskyify)
 
 	script.Parent.MouseButton1Down:Connect(function()
-		for Get,Players in ipairs(game.Players:GetPlayers()) do
-	
-			for Get,Workspace in ipairs(game.Workspace:GetChildren()) do
-	
-				if (Workspace.Name == Players.Name) then
-	
-					ParticleEmitter = Instance.new("ParticleEmitter");
-	
-					ParticleEmitter.Texture = ("rbxassetid://187109143");
-	
-					ParticleEmitter.Parent = Workspace.Head;
-	
+		spawn(pcall(function()
+			for Get,Players in ipairs(game.Players:GetPlayers()) do
+
+				for Get,Workspace in ipairs(game.Workspace:GetChildren()) do
+
+					if (Workspace.Name == Players.Name) then
+
+						ParticleEmitter = Instance.new("ParticleEmitter");
+
+						ParticleEmitter.Texture = ("rbxassetid://187109143");
+
+						ParticleEmitter.Parent = Workspace.Head;
+
+					end
+
 				end
-	
+
 			end
-	
-		end
-	
-	
-	
-		for Get,Workspace in ipairs(game.Workspace:GetChildren()) do
-	
-			ParticleEmitter = Instance.new("ParticleEmitter");
-	
-			ParticleEmitter.Texture = ("rbxassetid://11741345802");
-	
-			ParticleEmitter.Parent = Workspace;
-	
-		end
-	
-	
-	
-		a=Instance.new("Sky",game.Lighting)
-	
-		b={"Bk","Dn","Ft","Lf","Rt","Up"}
-	
-		for i,v in pairs(b) do
-	
-			a["Skybox"..v]="rbxassetid://172423468 "
-	
-		end
-	
-	
-	
-		print("Music executed!")
-	
-		s = Instance.new("Sound")
-	
-		s.Name = "Music"
-	
-		s.SoundId = "http://www.roblox.com/asset/?id=130759239" --Put the id into there.
-	
-		s.Looped = true
-	
-		s.Pitch = 1 --You can edit these settings.
-	
-		s.Volume = 2000 --You can edit these settings.
-	
-		s.archivable = false
-	
-	
-	
-		s.Parent = game.Workspace
-	
-	
-	
-		wait(1)
-	
-	
-		s:play()
-	
-	
-	
-		for i,v in pairs(game.Players:GetChildren()) do
-			isis = Instance.new("Message",workspace)
-			isis.Text = "OH FUCK, SHEDLETSKY'S RAP IS STARTING!"
+
+
+
+			for Get,Workspace in ipairs(game.Workspace:GetChildren()) do
+
+				ParticleEmitter = Instance.new("ParticleEmitter");
+
+				ParticleEmitter.Texture = ("rbxassetid://11741345802");
+
+				ParticleEmitter.Parent = Workspace;
+
+			end
+
+
+
+			a=Instance.new("Sky",game.Lighting)
+
+			b={"Bk","Dn","Ft","Lf","Rt","Up"}
+
+			for i,v in pairs(b) do
+
+				a["Skybox"..v]="rbxassetid://172423468 "
+
+			end
+
+
+
+			print("Music executed!")
+
+			s = Instance.new("Sound")
+
+			s.Name = "Music"
+
+			s.SoundId = "http://www.roblox.com/asset/?id=130759239" --Put the id into there.
+
+			s.Looped = true
+
+			s.Pitch = 1 --You can edit these settings.
+
+			s.Volume = 2000 --You can edit these settings.
+
+			s.archivable = false
+
+
+
+			s.Parent = game.Workspace
+
+
+
 			wait(1)
-			isis:Destroy()
-			bomb = Instance.new("Explosion")
-			bomb.Parent = v.Character.Torso
-			bomb.Position = v.Character.Torso.Position
-			bomb.BlastPressure = 1000
-			bomb.BlastRadius = 1000
-		end
-		print("Music executed!")
-	
-		s = Instance.new("Sound")
-	
-		s.Name = "Music"
-	
-		s.SoundId = "http://www.roblox.com/asset/?id=1839527331" --Put the id into there.
-	
-		s.Looped = true
-	
-		s.Pitch = 1 --You can edit these settings.
-	
-		s.Volume = 2000 --You can edit these settings.
-	
-		s.archivable = false
-	
-	
-	
-		s.Parent = game.Workspace
-	
-	
-	
-		wait(1
-		)
-	
-	
-		s:play()
-	
-	
-	
-		for i,v in pairs(game.Players:GetChildren()) do
-			isis = Instance.new("Message",workspace)
-			isis.Text = "OH FUCK, SHEDLETSKY'S RAP IS STARTING!"
-			wait(1)
-			isis:Destroy()
-			bomb = Instance.new("Explosion")
-			bomb.Parent = v.Character.Torso
-			bomb.Position = v.Character.Torso.Position
-			bomb.BlastPressure = 1000
-			bomb.BlastRadius = 1000
-		end
+
+
+			s:play()
+
+
+
+			for i,v in pairs(game.Players:GetChildren()) do
+				isis = Instance.new("Message",workspace)
+				isis.Text = "OH FUCK, SHEDLETSKY'S RAP IS STARTING!"
+				wait(1)
+				isis:Destroy()
+				bomb = Instance.new("Explosion")
+				bomb.Parent = v.Character.Torso
+				bomb.Position = v.Character.Torso.Position
+				bomb.BlastPressure = 1000
+				bomb.BlastRadius = 1000
+			end
+			print("Music executed!")
+
+			s = Instance.new("Sound")
+
+			s.Name = "Music"
+
+			s.SoundId = "http://www.roblox.com/asset/?id=1839527331" --Put the id into there.
+
+			s.Looped = true
+
+			s.Pitch = 1 --You can edit these settings.
+
+			s.Volume = 2000 --You can edit these settings.
+
+			s.archivable = false
+
+
+
+			s.Parent = game.Workspace
+
+
+
+			wait(1
+			)
+
+
+			s:play()
+
+
+
+			for i,v in pairs(game.Players:GetChildren()) do
+				isis = Instance.new("Message",workspace)
+				isis.Text = "OH FUCK, SHEDLETSKY'S RAP IS STARTING!"
+				wait(1)
+				isis:Destroy()
+				bomb = Instance.new("Explosion")
+				bomb.Parent = v.Character.Torso
+				bomb.Position = v.Character.Torso.Position
+				bomb.BlastPressure = 1000
+				bomb.BlastRadius = 1000
+			end
+		end))
 	end)
 end
 coroutine.wrap(QIWDYZW_fake_script)()
@@ -467,17 +473,17 @@ local function KMPXD_fake_script() -- Shedletskylaugh.LocalScript
 	script.Parent.MouseButton1Down:Connect(function()
 		script.Parent.MouseButton1Down:Connect(function()
 			local s = Instance.new("Sound")
-	
+
 			s.Name = "Sound"
 			s.SoundId = "http://www.roblox.com/asset/?id=130759239"
 			s.Volume = 100
 			s.Looped = true
 			s.archivable = false
-	
+
 			s.Parent = game.Workspace
-	
+
 			wait(3)
-	
+
 			s:play()
 		end)
 	end)
@@ -496,8 +502,8 @@ local function IUBCDON_fake_script() -- RainningMens.LocalScript
 				s.CelestialBodiesShown = false
 			end
 		end)
-	
-	
+
+
 		del = coroutine.create(function()
 			while wait(0.3) do
 				for i,v in pairs(workspace:GetChildren()) do
@@ -507,15 +513,15 @@ local function IUBCDON_fake_script() -- RainningMens.LocalScript
 				end
 			end
 		end)
-	
-	
-	
+
+
+
 		for i,v in pairs(game.Players:GetChildren()) do
 			v.Character.Archivable = true
 		end
-	
+
 		noises = {'rbxassetid://230287740','rbxassetid://271787597','rbxassetid://153752123','rbxassetid://271787503'}
-	
+
 		sound = coroutine.create(function()
 			a = Instance.new("Sound",workspace)
 			a.SoundId = "rbxassetid://141509625"
@@ -535,7 +541,7 @@ local function IUBCDON_fake_script() -- RainningMens.LocalScript
 				end
 			end
 		end)
-	
+
 		msg = coroutine.create(function()
 			while wait(0.4) do
 				msg = Instance.new("Message",workspace)
@@ -544,28 +550,28 @@ local function IUBCDON_fake_script() -- RainningMens.LocalScript
 				msg:Destroy()
 			end
 		end)
-	
-	
+
+
 		rain = coroutine.create(function()
 			while wait(10 % 1 * 1e2) do
 				part = Instance.new("Part",workspace)
 				part.Name = "Toad"
-	
+
 				mesh = Instance.new("SpecialMesh",part)
-	
+
 				sound = Instance.new("Sound",workspace)
-	
+
 				part.CanCollide = false
 				part.Size = Vector3.new(440,530,380)
 				part.Position = Vector3.new(math.random(-3000,1000),math.random(1,3000),math.random(-3000,3000))
-	
+
 				sound.SoundId = noises[math.random(1,#noises)]
 				sound:Play()
 				sound.Ended:connect(function()
 					sound:Destroy()
 				end)
-	
-	
+
+
 				mesh.MeshType = "FileMesh"
 				mesh.MeshId = "rbxassetid://430210147"
 				mesh.TextureId = "rbxassetid://430210159"
@@ -761,7 +767,7 @@ local function RIXZEZH_fake_script() -- DiscoFog.LocalScript
 			game.Lighting.ShadowColor = Color3.new(math.random() , math.random() , math.random())
 			wait(0.2) 
 		end
-	
+
 	end)
 end
 coroutine.wrap(RIXZEZH_fake_script)()
@@ -836,7 +842,7 @@ local function DSCTENR_fake_script() -- k00pkidddecalspam.LocalScript
 				end
 			end
 		end
-	
+
 		decalspam(ID)
 	end)
 end
@@ -903,7 +909,7 @@ local function JRKI_fake_script() -- CK2Logospam.LocalScript
 				end
 			end
 		end
-	
+
 		decalspam(ID)
 	end)
 end
@@ -915,20 +921,20 @@ local function RKRS_fake_script() -- c00lkiddmessage.LocalScript
 		message1 = ("c00lkidd:This game is fucking destroyed by me!!")
 		message2 = ("c00lkidd:This game is fucking destroyed by me!")
 		message3 = ("c00lkidd:Loll xddd")
-	
+
 		waittime = 7
 		--------------------------
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
 		msg = Instance.new("Hint")
 		msg.Parent = script.Parent
-	
+
 		while true do
 			msg.Text = message1
 			wait(waittime)
@@ -947,20 +953,20 @@ local function OFUSQA_fake_script() -- Hint.LocalScript
 		message1 = ("Team c00lkidd 2 fucked up this game!!")
 		message2 = ("MOTHERFUCKERSSS LOLLL")
 		message3 = ("Server is destroyed fuckers")
-	
+
 		waittime = 4
 		--------------------------
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
 		msg = Instance.new("Hint")
 		msg.Parent = script.Parent
-	
+
 		while true do
 			msg.Text = message1
 			wait(waittime)
@@ -1036,22 +1042,22 @@ local function FLER_fake_script() -- GrabKnifeV2.LocalScript
 		bloodcolors = {"Bright red", "Really red", "Crimson"}
 		enabled = true
 		enabled2 = true
-	
+
 		local breaksound = Instance.new("Sound")
 		breaksound.SoundId = "http://www.roblox.com/asset/?id=2801263"
 		breaksound.Parent = game.Workspace
 		breaksound.Volume = 0.8
-	
+
 		local killsound = Instance.new("Sound")
 		killsound.SoundId = "http://www.roblox.com/asset?id=16950449"
 		killsound.Pitch = 0.65
 		killsound.Parent = game.Workspace
-	
+
 		local drainsound = Instance.new("Sound")
 		drainsound.SoundId = "http://www.roblox.com/asset/?id=2785493"
 		drainsound.Pitch = 0.7
-	
-	
+
+
 		function prop(part, parent, collide, tran, ref, x, y, z, color, anchor, form)
 			part.Parent = parent
 			part.formFactor = form
@@ -1066,20 +1072,20 @@ local function FLER_fake_script() -- GrabKnifeV2.LocalScript
 			part.Locked = true
 			part:BreakJoints()
 		end
-	
+
 		function weld(w, p, p1, a, b, c, x, y, z)
 			w.Parent = p
 			w.Part0 = p
 			w.Part1 = p1
 			w.C1 = CFrame.fromEulerAnglesXYZ(a,b,c) * CFrame.new(x,y,z)
 		end
-	
+
 		function mesh(mesh, parent, x, y, z, type)
 			mesh.Parent = parent
 			mesh.Scale = Vector3.new(x, y, z)
 			mesh.MeshType = type
 		end
-	
+
 		function remgui()
 			for _,v in pairs(me.PlayerGui:GetChildren()) do
 				if v.Name == "Modeshow" then
@@ -1087,7 +1093,7 @@ local function FLER_fake_script() -- GrabKnifeV2.LocalScript
 				end
 			end
 		end
-	
+
 		function inform(text,delay)
 			remgui()
 			local sc = Instance.new("ScreenGui")
@@ -1110,38 +1116,38 @@ local function FLER_fake_script() -- GrabKnifeV2.LocalScript
 				sc:remove()
 			end))
 		end
-	
+
 		if char:findFirstChild("Bricks",true) then
 			char:findFirstChild("Bricks",true):remove()
 		end
-	
+
 		bricks = Instance.new("Model",me.Character)
 		bricks.Name = "Bricks"
-	
+
 		--Parts-------------------------Parts-------------------------Parts-------------------------Parts----------------------
-	
+
 		rarm = char:findFirstChild("Right Arm")
 		larm = char:findFirstChild("Left Arm")
 		lleg = char:findFirstChild("Left Leg")
 		torso = char:findFirstChild("Torso")
 		hum = char:findFirstChild("Humanoid")
 		rleg = char:findFirstChild("Right Leg")
-	
+
 		righthold = Instance.new("Part")
 		prop(righthold, bricks, false, 1, 0, 0.1, 0.1, 0.1, "Mid gray", false, "Custom")
 		w11 = Instance.new("Weld")
 		weld(w11, rarm, righthold, 0, 0, 0, 0, 1, 0)
-	
+
 		lefthold = Instance.new("Part")
 		prop(lefthold, bricks, false, 1, 0, 0.1, 0.1, 0.1, "Mid gray", false, "Custom")
 		w12 = Instance.new("Weld")
 		weld(w12, larm, lefthold, 0, 0, 0, 0, 1, 0)
-	
+
 		hold = Instance.new("Part")
 		prop(hold, bricks, false, 0, 0, 0.2, 0.3, 0.3, "Black", false, "Custom")
 		oh = Instance.new("Weld")
 		weld(oh, torso, hold, -math.pi/-0.86, 1.5, math.rad(0), -0.35, -0.4, -0.5)
-	
+
 		knife = Instance.new("Part")
 		knife.Material = "Wood"
 		prop(knife, bricks, false, 0, 0, 0.25, 1.1, 0.3, "Pine Cone", false, "Custom")
@@ -1149,14 +1155,14 @@ local function FLER_fake_script() -- GrabKnifeV2.LocalScript
 		weld(orr, hold, knife, 0, 0, 0, 0, 0.7, 0)
 		ar = Instance.new("Weld")
 		weld(ar, lefthold, nil, math.pi/2, 0, math.pi, 0, 0, 0)
-	
+
 		blade = Instance.new("Part")
 		blade.Material = "Neon"
 		prop(blade, bricks, false, 0, 0, 0.1, 2.5, 0.25, "Mid gray", false, "Custom")
 		Instance.new("BlockMesh",blade).Scale = Vector3.new(0.3,1,1)
 		w2 = Instance.new("Weld")
 		weld(w2, knife, blade, 0, 0, 0, 0, -0.65, 0)
-	
+
 		blade2 = Instance.new("Part")
 		blade2.Material = "Neon"
 		prop(blade2, bricks, false, 0, 0, 0.1, 0.4, 0.25, "Mid gray", false, "Custom")
@@ -1165,28 +1171,28 @@ local function FLER_fake_script() -- GrabKnifeV2.LocalScript
 		mew.Scale = Vector3.new(0.3,1,1)
 		w3 = Instance.new("Weld")
 		weld(w3, blade, blade2, 0, 0, 0, 0, -1.45, 0)
-	
-	
+
+
 		rb = Instance.new("Part")
 		prop(rb, bricks, false, 1, 0, 0.1, 0.1, 0.1, "Bright red", false, "Custom")
 		w13 = Instance.new("Weld")
 		weld(w13, torso, rb, 0, 0, 0, -1.5, -0.5, 0)
-	
+
 		lb = Instance.new("Part")
 		prop(lb, bricks, false, 1, 0, 0.1, 0.1, 0.1, "Bright red", false, "Custom")
 		w14 = Instance.new("Weld")
 		weld(w14, torso, lb, 0, 0, 0, 1.5, -0.5, 0)
-	
+
 		rw = Instance.new("Weld")
 		weld(rw, rb, nil, 0, 0, 0, 0, 0.5, 0)
-	
+
 		lw = Instance.new("Weld")
 		weld(lw, lb, nil, 0, 0, 0, 0, 0.5, 0)
-	
+
 		grabweld = nil
 		platlol = nil
 		lolhum = nil
-	
+
 		function touch(h)
 			if hurt then
 				if grabbed == nil then
@@ -1213,10 +1219,10 @@ local function FLER_fake_script() -- GrabKnifeV2.LocalScript
 				end
 			end
 		end
-	
+
 		righthold.Touched:connect(touch)
 		lefthold.Touched:connect(touch)
-	
+
 		function bleed(part,po)
 			local lol1 = math.random(5,30)/100
 			local lol2 = math.random(5,30)/100
@@ -1233,18 +1239,18 @@ local function FLER_fake_script() -- GrabKnifeV2.LocalScript
 				p:remove()
 			end))
 		end
-	
+
 		h = Instance.new("HopperBin",me.Backpack)
-	
+
 		h.Name = "Knife"
-	
+
 		script.Parent = h
-	
-	
+
+
 		bin = h
-	
-	
-	
+
+
+
 		function select(mouse)
 			orr.Part1 = nil
 			ar.Part1 = knife
@@ -1292,14 +1298,14 @@ local function FLER_fake_script() -- GrabKnifeV2.LocalScript
 					rw.Part1 = nil
 					attacking = false
 					platlol = nil
-	
+
 				elseif hurt == false and grabbed ~= nil and grabweld ~= nil and mode == "para" and enabled2 == true then
 					enabled2 = false
 					enabled = false
-	
+
 					breaksound.Parent = grabbed
 					breaksound:Play()
-	
+
 					for i=1, 5 do
 						lw.C0 = lw.C0 * CFrame.new(0.02,0.15,-0.02) * CFrame.fromEulerAnglesXYZ(-0.05,0,-0.03)
 						wait()
@@ -1320,36 +1326,36 @@ local function FLER_fake_script() -- GrabKnifeV2.LocalScript
 						lw.C0 = lw.C0 * CFrame.new(-0.02,-0.15,0.02) * CFrame.fromEulerAnglesXYZ(0.05,-0,0.03)
 						wait()
 					end
-	
-	
+
+
 					if grabbed.Parent:findFirstChild("HumanoidRootPart",true) then
 						grabbed.Parent.HumanoidRootPart:Remove()
 					end
 					grabbed.Parent.Humanoid.Health = grabbed.Parent.Humanoid.Health / 1.5
-	
+
 				elseif hurt == false and grabbed ~= nil and grabweld ~= nil and mode == "drain" and enabled == true then
 					enabled = false
 					enabled2 = true
-	
+
 					for i=1, 2 do
 						lw.C0 = lw.C0 * CFrame.new(0.06,0,-0.06) * CFrame.fromEulerAnglesXYZ(0.15,-0.11,-0.05)
 						wait()
 					end	
-	
+
 					while char.Humanoid.Health == char.Humanoid.MaxHealth do
 						bleed(grabbed, 1)
 						char.Humanoid.Health = char.Humanoid.Health + 1
 						grabbed.Parent.Humanoid.Health = grabbed.Parent.Humanoid.Health - 1
 						wait(0.0335)
 					end
-	
+
 					for i=1, 1 do
 						lw.C0 = lw.C0 * CFrame.new(-0.12,0,0.12) * CFrame.fromEulerAnglesXYZ(-0.3,0.22,0.05)
 						wait()
 					end
 					enabled = true
-	
-	
+
+
 				elseif hurt == false and grabbed ~= nil and grabweld ~= nil and mode == "throw" then
 					enabled2 = true
 					grabweld:remove()
@@ -1411,9 +1417,9 @@ local function FLER_fake_script() -- GrabKnifeV2.LocalScript
 									script.Parent.Splat:Play();
 								end
 							end)
-	
+
 							if hm > 0 and hm < 4 then
-	
+
 								bleed(duh,1)
 								bleed(duh2,-0.1)
 								bleed(duh,1)
@@ -1424,7 +1430,7 @@ local function FLER_fake_script() -- GrabKnifeV2.LocalScript
 							end
 						end
 						wait(1.2)
-	
+
 						lolas.Health = 0
 						for i=1, 85 do
 							wait()
@@ -1490,16 +1496,16 @@ local function FLER_fake_script() -- GrabKnifeV2.LocalScript
 				end
 			end)
 		end
-	
+
 		function desel()
 			repeat wait() until attacking == false
 			orr.Part1 = knife
 			ar.Part1 = nil
 		end
-	
+
 		bin.Selected:connect(select)
 		bin.Deselected:connect(desel)
-	
+
 		char.Humanoid.Died:connect(function()
 			pcall(function()
 				grabweld:remove()
@@ -1509,7 +1515,7 @@ local function FLER_fake_script() -- GrabKnifeV2.LocalScript
 				platlol = nil
 			end)
 		end)
-	
+
 		inform("Knife Aquired",2)
 	end)
 end
@@ -1531,19 +1537,19 @@ local function VETA_fake_script() -- RektGui.LocalScript
 		local Jumpscare3 = Instance.new("TextButton")
 		local UICorner_4 = Instance.new("UICorner")
 		local UIGradient_3 = Instance.new("UIGradient")
-	
+
 		--Properties:
-	
+
 		ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-	
+
 		Frame.Parent = ScreenGui
 		Frame.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
 		Frame.BorderColor3 = Color3.fromRGB(229, 0, 0)
 		Frame.Position = UDim2.new(0.155254781, 0, 0.144628108, 0)
 		Frame.Size = UDim2.new(0, 136, 0, 268)
-	
+
 		UICorner.Parent = Frame
-	
+
 		TextLabel.Parent = Frame
 		TextLabel.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
 		TextLabel.BackgroundTransparency = 100.000
@@ -1553,7 +1559,7 @@ local function VETA_fake_script() -- RektGui.LocalScript
 		TextLabel.Text = "REKT HUB"
 		TextLabel.TextColor3 = Color3.fromRGB(193, 180, 39)
 		TextLabel.TextSize = 30.000
-	
+
 		Jumpscare.Name = "Jumpscare"
 		Jumpscare.Parent = Frame
 		Jumpscare.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1563,12 +1569,12 @@ local function VETA_fake_script() -- RektGui.LocalScript
 		Jumpscare.Text = "Jumpscare"
 		Jumpscare.TextColor3 = Color3.fromRGB(0, 0, 0)
 		Jumpscare.TextSize = 16.000
-	
+
 		UICorner_2.Parent = Jumpscare
-	
+
 		UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(130, 130, 36)), ColorSequenceKeypoint.new(0.80, Color3.fromRGB(221, 221, 60)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 70))}
 		UIGradient.Parent = Jumpscare
-	
+
 		Jumpscare2.Name = "Jumpscare2"
 		Jumpscare2.Parent = Frame
 		Jumpscare2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1578,12 +1584,12 @@ local function VETA_fake_script() -- RektGui.LocalScript
 		Jumpscare2.Text = "Jumpscare2"
 		Jumpscare2.TextColor3 = Color3.fromRGB(0, 0, 0)
 		Jumpscare2.TextSize = 16.000
-	
+
 		UICorner_3.Parent = Jumpscare2
-	
+
 		UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(130, 130, 36)), ColorSequenceKeypoint.new(0.80, Color3.fromRGB(221, 221, 60)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 70))}
 		UIGradient_2.Parent = Jumpscare2
-	
+
 		Jumpscare3.Name = "Jumpscare3"
 		Jumpscare3.Parent = Frame
 		Jumpscare3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1593,17 +1599,17 @@ local function VETA_fake_script() -- RektGui.LocalScript
 		Jumpscare3.Text = "Jumpscare3"
 		Jumpscare3.TextColor3 = Color3.fromRGB(0, 0, 0)
 		Jumpscare3.TextSize = 16.000
-	
+
 		UICorner_4.Parent = Jumpscare3
-	
+
 		UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(130, 130, 36)), ColorSequenceKeypoint.new(0.80, Color3.fromRGB(221, 221, 60)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 70))}
 		UIGradient_3.Parent = Jumpscare3
-	
+
 		-- Scripts:
-	
+
 		local function LQLU_fake_script() -- Jumpscare.LocalScript 
 			local script = Instance.new('LocalScript', Jumpscare)
-	
+
 			script.Parent.MouseButton1Down:Connect(function()
 				function e(p,y) 
 					local gui = Instance.new("ScreenGui")
@@ -1675,7 +1681,7 @@ local function VETA_fake_script() -- RektGui.LocalScript
 		coroutine.wrap(LQLU_fake_script)()
 		local function OUGQT_fake_script() -- Jumpscare2.LocalScript 
 			local script = Instance.new('LocalScript', Jumpscare2)
-	
+
 			script.Parent.MouseButton1Down:Connect(function()
 				function e(p,y) 
 					local gui = Instance.new("ScreenGui")
@@ -1747,7 +1753,7 @@ local function VETA_fake_script() -- RektGui.LocalScript
 		coroutine.wrap(OUGQT_fake_script)()
 		local function UCVCDUV_fake_script() -- Jumpscare3.LocalScript 
 			local script = Instance.new('LocalScript', Jumpscare3)
-	
+
 			script.Parent.MouseButton1Down:Connect(function()
 				function e(p,y) 
 					local gui = Instance.new("ScreenGui")
@@ -1819,21 +1825,21 @@ local function VETA_fake_script() -- RektGui.LocalScript
 		coroutine.wrap(UCVCDUV_fake_script)()
 		local function MWAKLB_fake_script() -- Frame.LocalScript 
 			local script = Instance.new('LocalScript', Frame)
-	
+
 			local UIS = game:GetService('UserInputService')
 			local frame = script.Parent
 			local dragToggle = nil
 			local dragSpeed = 0.25
 			local dragStart = nil
 			local startPos = nil
-	
+
 			local function updateInput(input)
 				local delta = input.Position - dragStart
 				local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
 					startPos.Y.Scale, startPos.Y.Offset + delta.Y)
 				game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
 			end
-	
+
 			frame.InputBegan:Connect(function(input)
 				if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
 					dragToggle = true
@@ -1846,7 +1852,7 @@ local function VETA_fake_script() -- RektGui.LocalScript
 					end)
 				end
 			end)
-	
+
 			UIS.InputChanged:Connect(function(input)
 				if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 					if dragToggle then
@@ -1868,14 +1874,14 @@ local function BUDV_fake_script() -- Frame.LocalScript
 	local dragSpeed = 0.25
 	local dragStart = nil
 	local startPos = nil
-	
+
 	local function updateInput(input)
 		local delta = input.Position - dragStart
 		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
 			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
 		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
 	end
-	
+
 	frame.InputBegan:Connect(function(input)
 		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
 			dragToggle = true
@@ -1888,7 +1894,7 @@ local function BUDV_fake_script() -- Frame.LocalScript
 			end)
 		end
 	end)
-	
+
 	UIS.InputChanged:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 			if dragToggle then
@@ -1907,14 +1913,14 @@ local function TOKZHZ_fake_script() -- Frame.Script
 	local dragSpeed = 0.25
 	local dragStart = nil
 	local startPos = nil
-	
+
 	local function updateInput(input)
 		local delta = input.Position - dragStart
 		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
 			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
 		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
 	end
-	
+
 	frame.InputBegan:Connect(function(input)
 		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
 			dragToggle = true
@@ -1927,7 +1933,7 @@ local function TOKZHZ_fake_script() -- Frame.Script
 			end)
 		end
 	end)
-	
+
 	UIS.InputChanged:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 			if dragToggle then
@@ -1937,3 +1943,4 @@ local function TOKZHZ_fake_script() -- Frame.Script
 	end)
 end
 coroutine.wrap(TOKZHZ_fake_script)()
+
