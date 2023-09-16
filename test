@@ -11,7 +11,7 @@ local TextButton_2 = Instance.new("TextButton")
 --Properties:
 
 fetest.Name = "fetest"
-fetest.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+fetest.Parent = game.CoreGui
 fetest.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = fetest
