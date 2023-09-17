@@ -69,7 +69,7 @@ TextButton_4.TextSize = 14.000
 
 -- Scripts:
 
-local function ZZWHLME_fake_script() -- Frame.drag 
+local function YUSJ_fake_script() -- Frame.drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -126,8 +126,8 @@ local function ZZWHLME_fake_script() -- Frame.drag
 	
 	runService.Heartbeat:Connect(Update)
 end
-coroutine.wrap(ZZWHLME_fake_script)()
-local function HWVI_fake_script() -- TextButton.Script 
+coroutine.wrap(YUSJ_fake_script)()
+local function ALLLD_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -146,16 +146,16 @@ local function HWVI_fake_script() -- TextButton.Script
 		end)
 	end)
 end
-coroutine.wrap(HWVI_fake_script)()
-local function ASCI_fake_script() -- TextButton_2.Script 
+coroutine.wrap(ALLLD_fake_script)()
+local function IKCUZJZ_fake_script() -- TextButton_2.Script 
 	local script = Instance.new('Script', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
 	end)
 end
-coroutine.wrap(ASCI_fake_script)()
-local function IHRWI_fake_script() -- TextButton_3.Script 
+coroutine.wrap(IKCUZJZ_fake_script)()
+local function JBZN_fake_script() -- TextButton_3.Script 
 	local script = Instance.new('Script', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -168,131 +168,135 @@ local function IHRWI_fake_script() -- TextButton_3.Script
 		end)
 	end)
 end
-coroutine.wrap(IHRWI_fake_script)()
-local function CDXFBP_fake_script() -- TextButton_4.Script 
+coroutine.wrap(JBZN_fake_script)()
+local function ZCFJHJE_fake_script() -- TextButton_4.Script 
 	local script = Instance.new('Script', TextButton_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		coroutine.wrap(function()
-			-- DECAL SPAM SCRIPT. CHANGE THIS TO THE DECAL ID YOU WANT TO BE SPAMMED.
+		-- DECAL SPAM SCRIPT. CHANGE THIS TO THE DECAL ID YOU WANT TO BE SPAMMED.
 	
-			local ID = 731222226
+		local ID = 731222226
 	
-			-- IF YOU WANT THE SKYBOX TO BE SPAMMED AS WELL, TURN THIS TO TRUE.
+		-- IF YOU WANT THE SKYBOX TO BE SPAMMED AS WELL, TURN THIS TO TRUE.
 	
-			local Skybox = true
+		local Skybox = true
 	
-			-- FINALLY, IF YOU WANT PARTICLES TO BE SPAMMED, TURN THIS TO TRUE.
+		-- FINALLY, IF YOU WANT PARTICLES TO BE SPAMMED, TURN THIS TO TRUE.
 	
-			local particle = false
+		local particle = false
 	
-			-- DO NOT CHANGE BELOW. UNLESS YOU KNOW WHAT YOU'RE DOING.
+		-- DO NOT CHANGE BELOW. UNLESS YOU KNOW WHAT YOU'RE DOING.
 	
-			for i,v in pairs (game.Workspace:GetChildren()) do
-				if v:IsA("Part") then
-					local decal1 =Instance.new("Decal")
-					local decal2 =Instance.new("Decal")
-					local decal3 =Instance.new("Decal")
-					local decal4 =Instance.new("Decal")
-					local decal5 =Instance.new("Decal")
-					local decal6 =Instance.new("Decal")
-					decal1.Texture = "http://www.roblox.com/asset/?id=" ..ID
-					decal2.Texture = "http://www.roblox.com/asset/?id=" ..ID
-					decal3.Texture = "http://www.roblox.com/asset/?id=" ..ID
-					decal4.Texture = "http://www.roblox.com/asset/?id=" ..ID
-					decal5.Texture = "http://www.roblox.com/asset/?id=" ..ID
-					decal6.Texture = "http://www.roblox.com/asset/?id=" ..ID
-					decal1.Parent = v
-					decal2.Parent = v
-					decal3.Parent = v
-					decal4.Parent = v
-					decal5.Parent = v
-					decal6.Parent = v
-					decal1.Face = "Front"
-					decal2.Face = "Top"
-					decal3.Face = "Left"
-					decal4.Face = "Right"
-					decal5.Face = "Bottom"
-					decal6.Face = "Back"
-				end
+		for i,v in pairs (game.Workspace:GetChildren()) do
+			if v:IsA("Part") then
+				local decal1 =Instance.new("Decal")
+				local decal2 =Instance.new("Decal")
+				local decal3 =Instance.new("Decal")
+				local decal4 =Instance.new("Decal")
+				local decal5 =Instance.new("Decal")
+				local decal6 =Instance.new("Decal")
+				decal1.Texture = "http://www.roblox.com/asset/?id=" ..ID
+				decal2.Texture = "http://www.roblox.com/asset/?id=" ..ID
+				decal3.Texture = "http://www.roblox.com/asset/?id=" ..ID
+				decal4.Texture = "http://www.roblox.com/asset/?id=" ..ID
+				decal5.Texture = "http://www.roblox.com/asset/?id=" ..ID
+				decal6.Texture = "http://www.roblox.com/asset/?id=" ..ID
+				decal1.Parent = v
+				decal2.Parent = v
+				decal3.Parent = v
+				decal4.Parent = v
+				decal5.Parent = v
+				decal6.Parent = v
+				decal1.Face = "Front"
+				decal2.Face = "Top"
+				decal3.Face = "Left"
+				decal4.Face = "Right"
+				decal5.Face = "Bottom"
+				decal6.Face = "Back"
 			end
-			task.spawn(coroutine.wrap(function()
-				for i,v in pairs (game.Workspace:GetChildren()) do
-					if v:IsA("Model") then
-						for i,z in pairs (v:GetChildren()) do
-							if z:IsA("Part") then
-								local decal7 =Instance.new("Decal")
-								local decal8 =Instance.new("Decal")
-								local decal9 =Instance.new("Decal")
-								local decal10 =Instance.new("Decal")
-								local decal11 =Instance.new("Decal")
-								local decal12 =Instance.new("Decal")
-								decal7.Texture = "http://www.roblox.com/asset/?id=" ..ID
-								decal8.Texture = "http://www.roblox.com/asset/?id=" ..ID
-								decal9.Texture = "http://www.roblox.com/asset/?id=" ..ID
-								decal10.Texture = "http://www.roblox.com/asset/?id=" ..ID
-								decal11.Texture = "http://www.roblox.com/asset/?id=" ..ID
-								decal12.Texture = "http://www.roblox.com/asset/?id=" ..ID
-								decal7.Parent = z
-								decal8.Parent = z
-								decal9.Parent = z
-								decal10.Parent = z
-								decal11.Parent = z
-								decal12.Parent = z
-								decal7.Face = "Front"
-								decal8.Face = "Top"
-								decal9.Face = "Left"
-								decal10.Face = "Right"
-								decal11.Face = "Bottom"
-								decal12.Face = "Back"
-							end
+		end
+		task.spawn(coroutine.wrap(function()
+			for i,v in pairs (game.Workspace:GetChildren()) do
+				if v:IsA("Model") then
+					for i,z in pairs (v:GetChildren()) do
+						if z:IsA("Part") then
+							local decal7 =Instance.new("Decal")
+							local decal8 =Instance.new("Decal")
+							local decal9 =Instance.new("Decal")
+							local decal10 =Instance.new("Decal")
+							local decal11 =Instance.new("Decal")
+							local decal12 =Instance.new("Decal")
+							decal7.Texture = "http://www.roblox.com/asset/?id=" ..ID
+							decal8.Texture = "http://www.roblox.com/asset/?id=" ..ID
+							decal9.Texture = "http://www.roblox.com/asset/?id=" ..ID
+							decal10.Texture = "http://www.roblox.com/asset/?id=" ..ID
+							decal11.Texture = "http://www.roblox.com/asset/?id=" ..ID
+							decal12.Texture = "http://www.roblox.com/asset/?id=" ..ID
+							decal7.Parent = z
+							decal8.Parent = z
+							decal9.Parent = z
+							decal10.Parent = z
+							decal11.Parent = z
+							decal12.Parent = z
+							decal7.Face = "Front"
+							decal8.Face = "Top"
+							decal9.Face = "Left"
+							decal10.Face = "Right"
+							decal11.Face = "Bottom"
+							decal12.Face = "Back"
 						end
 					end
-				end	
-			end))
+				end
+			end	
+		end))
 	
 	
-			if Skybox == true then
-				pcall(function()
-					local sky = Instance.new("Sky")
-					sky.Parent = game.Lighting
-				end)
-				sky.SkyboxBk = "http://www.roblox.com/asset/?id=" ..ID
-				sky.SkyboxDn = "http://www.roblox.com/asset/?id=" ..ID
-				sky.SkyboxFt = "http://www.roblox.com/asset/?id=" ..ID
-				sky.SkyboxLf = "http://www.roblox.com/asset/?id=" ..ID
-				sky.SkyboxRt = "http://www.roblox.com/asset/?id=" ..ID
-				sky.SkyboxUp = "http://www.roblox.com/asset/?id=" ..ID
-			end
+		if Skybox == true then
+			pcall(function()
+				local sky = Instance.new("Sky")
+				sky.Parent = game.Lighting
+			end)
+			sky.SkyboxBk = "http://www.roblox.com/asset/?id=" ..ID
+			sky.SkyboxDn = "http://www.roblox.com/asset/?id=" ..ID
+			sky.SkyboxFt = "http://www.roblox.com/asset/?id=" ..ID
+			sky.SkyboxLf = "http://www.roblox.com/asset/?id=" ..ID
+			sky.SkyboxRt = "http://www.roblox.com/asset/?id=" ..ID
+			sky.SkyboxUp = "http://www.roblox.com/asset/?id=" ..ID
+		end
 	
-			if particle == true then
-				for i,v in pairs (game.Workspace:GetChildren()) do
-					if v:IsA("Part") then
-						local particle = Instance.new("ParticleEmitter")
-						particle.Texture = "http://www.roblox.com/asset/?id=" ..ID
-						particle.Parent = v
-						particle.Rate = 200
-						for i,x in pairs (game.Workspace:GetChildren()) do
-							if x:IsA("Model") then
-								for i,z in pairs (x:GetChildren()) do
-									if z:IsA("Part") then
-										local particle2 = Instance.new("ParticleEmitter")
-										particle2.Texture = "http://www.roblox.com/asset/?id=" ..ID
-										particle2.Parent = z
-										particle2.Rate = 200
-									end
+		if particle == true then
+			for i,v in pairs (game.Workspace:GetChildren()) do
+				if v:IsA("Part") then
+					local particle = Instance.new("ParticleEmitter")
+					particle.Texture = "http://www.roblox.com/asset/?id=" ..ID
+					particle.Parent = v
+					particle.Rate = 200
+					for i,x in pairs (game.Workspace:GetChildren()) do
+						if x:IsA("Model") then
+							for i,z in pairs (x:GetChildren()) do
+								if z:IsA("Part") then
+									local particle2 = Instance.new("ParticleEmitter")
+									particle2.Texture = "http://www.roblox.com/asset/?id=" ..ID
+									particle2.Parent = z
+									particle2.Rate = 200
 								end
 							end
 						end
 					end
 				end
 			end
-		end)
-	
+		end
 	end)
 end
-coroutine.wrap(CDXFBP_fake_script)()
-local function UGOUP_fake_script() -- fetest.LocalScript 
+coroutine.wrap(ZCFJHJE_fake_script)()
+local function IMXO_fake_script() -- fetest.Script 
+	local script = Instance.new('Script', fetest)
+
+	task.wait(2)
+	script.Parent.Parent = game.CoreGui
+end
+coroutine.wrap(IMXO_fake_script)()
+local function EDLOEE_fake_script() -- fetest.LocalScript 
 	local script = Instance.new('LocalScript', fetest)
 
 	for _, v in pairs(game:GetDescendants()) do
@@ -303,7 +307,7 @@ local function UGOUP_fake_script() -- fetest.LocalScript
 	
 	workspace.FilteringEnabled = false
 	
-	workspace.Changed:connect(function ()
+	workspace.Changed:connect(function()
 		workspace.FilteringEnabled = false
 		print("{FE-Disabler} - Done!")
 		print("{FE-Disabler} - Thanks for useing FE-Disabler by GtaMasterYT")
@@ -312,11 +316,4 @@ local function UGOUP_fake_script() -- fetest.LocalScript
 	task.wait(2)
 	script.Parent.Parent = game.CoreGui
 end
-coroutine.wrap(UGOUP_fake_script)()
-local function YVEW_fake_script() -- fetest.Script 
-	local script = Instance.new('Script', fetest)
-
-	task.wait(2)
-	script.Parent.Parent = game.CoreGui
-end
-coroutine.wrap(YVEW_fake_script)()
+coroutine.wrap(EDLOEE_fake_script)()
