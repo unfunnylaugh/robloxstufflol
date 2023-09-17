@@ -7,6 +7,8 @@ local fetest = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
 local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
 
 --Properties:
 
@@ -19,14 +21,14 @@ Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderColor3 = Color3.fromRGB(255, 0, 0)
 Frame.BorderSizePixel = 2
 Frame.Position = UDim2.new(0.260428399, 0, 0.275510192, 0)
-Frame.Size = UDim2.new(0, 202, 0, 173)
+Frame.Size = UDim2.new(0, 232, 0, 226)
 
 TextButton.Parent = Frame
 TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.BorderColor3 = Color3.fromRGB(255, 0, 0)
 TextButton.BorderSizePixel = 2
-TextButton.Position = UDim2.new(0.103960395, 0, 0, 0)
-TextButton.Size = UDim2.new(0, 159, 0, 50)
+TextButton.Position = UDim2.new(-0.00379825453, 0, 0, 0)
+TextButton.Size = UDim2.new(0, 108, 0, 50)
 TextButton.Font = Enum.Font.SourceSans
 TextButton.Text = "message test"
 TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -36,16 +38,38 @@ TextButton_2.Parent = Frame
 TextButton_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_2.BorderColor3 = Color3.fromRGB(255, 0, 0)
 TextButton_2.BorderSizePixel = 2
-TextButton_2.Position = UDim2.new(0.103960395, 0, 0.405789584, 0)
-TextButton_2.Size = UDim2.new(0, 159, 0, 50)
+TextButton_2.Position = UDim2.new(-0.00379825453, 0, 0.219948828, 0)
+TextButton_2.Size = UDim2.new(0, 108, 0, 50)
 TextButton_2.Font = Enum.Font.SourceSans
 TextButton_2.Text = "fly"
 TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_2.TextSize = 14.000
 
+TextButton_3.Parent = Frame
+TextButton_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_3.BorderSizePixel = 2
+TextButton_3.Position = UDim2.new(0.461718976, 0, -0.00129011041, 0)
+TextButton_3.Size = UDim2.new(0, 108, 0, 50)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "disable FE"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextSize = 14.000
+
+TextButton_4.Parent = Frame
+TextButton_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_4.BorderSizePixel = 2
+TextButton_4.Position = UDim2.new(0.461718976, 0, 0.219948828, 0)
+TextButton_4.Size = UDim2.new(0, 108, 0, 50)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "C00lkidd decal spam"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextSize = 14.000
+
 -- Scripts:
 
-local function GLTWYZH_fake_script() -- Frame.drag 
+local function XGAYMO_fake_script() -- Frame.drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -102,8 +126,8 @@ local function GLTWYZH_fake_script() -- Frame.drag
 	
 	runService.Heartbeat:Connect(Update)
 end
-coroutine.wrap(GLTWYZH_fake_script)()
-local function UNDLD_fake_script() -- TextButton.Script 
+coroutine.wrap(XGAYMO_fake_script)()
+local function YHVYE_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -122,16 +146,147 @@ local function UNDLD_fake_script() -- TextButton.Script
 		end)
 	end)
 end
-coroutine.wrap(UNDLD_fake_script)()
-local function MOOQ_fake_script() -- TextButton_2.Script 
+coroutine.wrap(YHVYE_fake_script)()
+local function LVLRCWP_fake_script() -- TextButton_2.Script 
 	local script = Instance.new('Script', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
 	end)
 end
-coroutine.wrap(MOOQ_fake_script)()
-local function ZUFFGU_fake_script() -- fetest.LocalScript 
+coroutine.wrap(LVLRCWP_fake_script)()
+local function HRBDNC_fake_script() -- TextButton_3.Script 
+	local script = Instance.new('Script', TextButton_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		workspace.FilteringEnabled = false
+	
+		workspace.Changed:connect(function ()
+			workspace.FilteringEnabled = false
+			print("{FE-Disabler} - Done!")
+			print("{FE-Disabler} - Thanks for useing FE-Disabler by GtaMasterYT")
+		end)
+	end)
+end
+coroutine.wrap(HRBDNC_fake_script)()
+local function IJHSDD_fake_script() -- TextButton_4.Script 
+	local script = Instance.new('Script', TextButton_4)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		-- DECAL SPAM SCRIPT. CHANGE THIS TO THE DECAL ID YOU WANT TO BE SPAMMED.
+	
+		local ID = 433381097
+	
+		-- IF YOU WANT THE SKYBOX TO BE SPAMMED AS WELL, TURN THIS TO TRUE.
+	
+		local Skybox = true
+	
+		-- FINALLY, IF YOU WANT PARTICLES TO BE SPAMMED, TURN THIS TO TRUE.
+	
+		local particle = false
+	
+		-- DO NOT CHANGE BELOW. UNLESS YOU KNOW WHAT YOU'RE DOING.
+	
+		for i,v in pairs (game.Workspace:GetChildren()) do
+			if v:IsA("Part") then
+				local decal1 =Instance.new("Decal")
+				local decal2 =Instance.new("Decal")
+				local decal3 =Instance.new("Decal")
+				local decal4 =Instance.new("Decal")
+				local decal5 =Instance.new("Decal")
+				local decal6 =Instance.new("Decal")
+				decal1.Texture = "http://www.roblox.com/asset/?id=" ..ID
+				decal2.Texture = "http://www.roblox.com/asset/?id=" ..ID
+				decal3.Texture = "http://www.roblox.com/asset/?id=" ..ID
+				decal4.Texture = "http://www.roblox.com/asset/?id=" ..ID
+				decal5.Texture = "http://www.roblox.com/asset/?id=" ..ID
+				decal6.Texture = "http://www.roblox.com/asset/?id=" ..ID
+				decal1.Parent = v
+				decal2.Parent = v
+				decal3.Parent = v
+				decal4.Parent = v
+				decal5.Parent = v
+				decal6.Parent = v
+				decal1.Face = "Front"
+				decal2.Face = "Top"
+				decal3.Face = "Left"
+				decal4.Face = "Right"
+				decal5.Face = "Bottom"
+				decal6.Face = "Back"
+			end
+		end
+		for i,v in pairs (game.Workspace:GetChildren()) do
+			if v:IsA("Model") then
+				for i,z in pairs (v:GetChildren()) do
+					if z:IsA("Part") then
+						local decal7 =Instance.new("Decal")
+						local decal8 =Instance.new("Decal")
+						local decal9 =Instance.new("Decal")
+						local decal10 =Instance.new("Decal")
+						local decal11 =Instance.new("Decal")
+						local decal12 =Instance.new("Decal")
+						decal7.Texture = "http://www.roblox.com/asset/?id=" ..ID
+						decal8.Texture = "http://www.roblox.com/asset/?id=" ..ID
+						decal9.Texture = "http://www.roblox.com/asset/?id=" ..ID
+						decal10.Texture = "http://www.roblox.com/asset/?id=" ..ID
+						decal11.Texture = "http://www.roblox.com/asset/?id=" ..ID
+						decal12.Texture = "http://www.roblox.com/asset/?id=" ..ID
+						decal7.Parent = z
+						decal8.Parent = z
+						decal9.Parent = z
+						decal10.Parent = z
+						decal11.Parent = z
+						decal12.Parent = z
+						decal7.Face = "Front"
+						decal8.Face = "Top"
+						decal9.Face = "Left"
+						decal10.Face = "Right"
+						decal11.Face = "Bottom"
+						decal12.Face = "Back"
+					end
+				end
+			end
+		end	
+	
+	
+		if Skybox == true then
+			local sky = Instance.new("Sky")
+			sky.Parent = game.Lighting
+			sky.SkyboxBk = "http://www.roblox.com/asset/?id=" ..ID
+			sky.SkyboxDn = "http://www.roblox.com/asset/?id=" ..ID
+			sky.SkyboxFt = "http://www.roblox.com/asset/?id=" ..ID
+			sky.SkyboxLf = "http://www.roblox.com/asset/?id=" ..ID
+			sky.SkyboxRt = "http://www.roblox.com/asset/?id=" ..ID
+			sky.SkyboxUp = "http://www.roblox.com/asset/?id=" ..ID
+		end
+	
+		if particle == true then
+			for i,v in pairs (game.Workspace:GetChildren()) do
+				if v:IsA("Part") then
+					local particle = Instance.new("ParticleEmitter")
+					particle.Texture = "http://www.roblox.com/asset/?id=" ..ID
+					particle.Parent = v
+					particle.Rate = 200
+					for i,x in pairs (game.Workspace:GetChildren()) do
+						if x:IsA("Model") then
+							for i,z in pairs (x:GetChildren()) do
+								if z:IsA("Part") then
+									local particle2 = Instance.new("ParticleEmitter")
+									particle2.Texture = "http://www.roblox.com/asset/?id=" ..ID
+									particle2.Parent = z
+									particle2.Rate = 200
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+	
+	end)
+end
+coroutine.wrap(IJHSDD_fake_script)()
+local function YSPTXUN_fake_script() -- fetest.LocalScript 
 	local script = Instance.new('LocalScript', fetest)
 
 	for _, v in pairs(game:GetDescendants()) do
@@ -139,5 +294,13 @@ local function ZUFFGU_fake_script() -- fetest.LocalScript
 			v:Destroy()
 		end
 	end
+	
+	workspace.FilteringEnabled = false
+	
+	workspace.Changed:connect(function ()
+		workspace.FilteringEnabled = false
+		print("{FE-Disabler} - Done!")
+		print("{FE-Disabler} - Thanks for useing FE-Disabler by GtaMasterYT")
+	end)
 end
-coroutine.wrap(ZUFFGU_fake_script)()
+coroutine.wrap(YSPTXUN_fake_script)()
