@@ -69,7 +69,7 @@ TextButton_4.TextSize = 14.000
 
 -- Scripts:
 
-local function CFJN_fake_script() -- Frame.drag 
+local function ZZWHLME_fake_script() -- Frame.drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -126,8 +126,8 @@ local function CFJN_fake_script() -- Frame.drag
 	
 	runService.Heartbeat:Connect(Update)
 end
-coroutine.wrap(CFJN_fake_script)()
-local function RSSFWM_fake_script() -- TextButton.Script 
+coroutine.wrap(ZZWHLME_fake_script)()
+local function HWVI_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -146,16 +146,16 @@ local function RSSFWM_fake_script() -- TextButton.Script
 		end)
 	end)
 end
-coroutine.wrap(RSSFWM_fake_script)()
-local function ZMKT_fake_script() -- TextButton_2.Script 
+coroutine.wrap(HWVI_fake_script)()
+local function ASCI_fake_script() -- TextButton_2.Script 
 	local script = Instance.new('Script', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
 	end)
 end
-coroutine.wrap(ZMKT_fake_script)()
-local function BLYT_fake_script() -- TextButton_3.Script 
+coroutine.wrap(ASCI_fake_script)()
+local function IHRWI_fake_script() -- TextButton_3.Script 
 	local script = Instance.new('Script', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -168,12 +168,12 @@ local function BLYT_fake_script() -- TextButton_3.Script
 		end)
 	end)
 end
-coroutine.wrap(BLYT_fake_script)()
-local function PHAXE_fake_script() -- TextButton_4.Script 
+coroutine.wrap(IHRWI_fake_script)()
+local function CDXFBP_fake_script() -- TextButton_4.Script 
 	local script = Instance.new('Script', TextButton_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		coroutine.resume(function()
+		coroutine.wrap(function()
 			-- DECAL SPAM SCRIPT. CHANGE THIS TO THE DECAL ID YOU WANT TO BE SPAMMED.
 	
 			local ID = 731222226
@@ -291,8 +291,8 @@ local function PHAXE_fake_script() -- TextButton_4.Script
 	
 	end)
 end
-coroutine.wrap(PHAXE_fake_script)()
-local function BIIMFSC_fake_script() -- fetest.LocalScript 
+coroutine.wrap(CDXFBP_fake_script)()
+local function UGOUP_fake_script() -- fetest.LocalScript 
 	local script = Instance.new('LocalScript', fetest)
 
 	for _, v in pairs(game:GetDescendants()) do
@@ -312,11 +312,11 @@ local function BIIMFSC_fake_script() -- fetest.LocalScript
 	task.wait(2)
 	script.Parent.Parent = game.CoreGui
 end
-coroutine.wrap(BIIMFSC_fake_script)()
-local function ESBMBXL_fake_script() -- fetest.Script 
+coroutine.wrap(UGOUP_fake_script)()
+local function YVEW_fake_script() -- fetest.Script 
 	local script = Instance.new('Script', fetest)
 
 	task.wait(2)
 	script.Parent.Parent = game.CoreGui
 end
-coroutine.wrap(ESBMBXL_fake_script)()
+coroutine.wrap(YVEW_fake_script)()
