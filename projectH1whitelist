@@ -1,6 +1,7 @@
 local whitelist = {
     "FilteringDisabledEz",
-    "NameHere",
+    "gameeboy335",
+    "aHmoDEAC2",
 }
 
 for i,white in pairs(whitelist) do
