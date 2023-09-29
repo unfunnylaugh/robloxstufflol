@@ -1,0 +1,27 @@
+local whitelist = {
+    "FilteringDisabledEz",
+    "NameHere",
+}
+
+for i,white in pairs(whitelist) do
+    if white ~= game.Players.LocalPlayer.Name then
+        valid = true
+    else
+        valid = false
+    end
+end
+if valid == false then
+    local k = Instance.new("Message",game.Workspace)
+	k.Text = "you are not whitelisted, crashing in 5 secs..."
+	wait(3)
+	while true do
+		print("CRASH")
+		for i = 1, 2000 do
+			Instance.new("Part",game.workspace)
+		end
+	end
+end
+
+if valid == true then
+  print("Whitelisted!")
+end
