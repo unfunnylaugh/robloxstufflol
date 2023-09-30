@@ -1,0 +1,13 @@
+local g = game.Players.FilteringDisabledEz.Character
+g["Left Leg"]:BreakJoints()
+g["Right Leg"]:BreakJoints()
+
+task.spawn(function()
+for i,v in pairs(game.Players:GetPlayers()) do
+    if g:FindFirstChild'Left Leg' == true then
+        print("fail")
+    else
+        print("FE")
+    end
+end
+end)
