@@ -1,0 +1,21 @@
+local remote = game.workspace.Main.ChangeFace
+--[[
+decal = game.Players.LocalPlayer.Character.Head.Face
+ID = "rbxassetid://7205866972"
+local args = {
+    [1]=decal
+    [2]=ID
+}
+remote:FireServer(unpack(args))
+]]--
+
+for _, v in pairs(game:GetDescendants()) do
+if v:IsA("Decal") then
+ID = "rbxassetid://45528113"
+local args = {
+    [1]=v,
+    [2]=ID,
+}
+remote:FireServer(unpack(args))
+end
+end
