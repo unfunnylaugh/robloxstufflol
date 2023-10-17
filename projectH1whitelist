@@ -7,9 +7,9 @@ local whitelist = {
 
 for i,white in pairs(whitelist) do
     if white ~= game.Players.LocalPlayer.Name then
-        valid = false
-    else
         valid = true
+    else
+        valid = false
     end
 end
 if valid == false then
