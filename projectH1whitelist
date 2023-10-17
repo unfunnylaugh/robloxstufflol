@@ -4,14 +4,16 @@ local whitelist = {
     "aHmoDEAC2",
     "1337probacon",
 }
+valid = false
+wait(0.5)
 
 for i,white in pairs(whitelist) do
-    if white ~= game.Players.LocalPlayer.Name then
+    wait()
+    if white == game.Players.LocalPlayer.Name then
         valid = true
-    else
-        valid = false
     end
 end
+wait(5)
 if valid == false then
     local k = Instance.new("Message",game.Workspace)
 	k.Text = "you are not whitelisted, crashing in 5 secs..."
