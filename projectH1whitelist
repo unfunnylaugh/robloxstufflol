@@ -3,6 +3,7 @@ local whitelist = {
     "gameeboy335",
     "aHmoDEAC2",
     "1337probacon",
+    "1337service",
 }
 valid = false
 wait(0.5)
