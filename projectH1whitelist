@@ -5,6 +5,7 @@ local whitelist = {
     "1337probacon",
     "1337service",
     "H1iaIt",
+    "bruh1337washere",
 }
 valid = false
 wait(0.5)
