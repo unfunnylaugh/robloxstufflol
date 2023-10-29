@@ -7,6 +7,8 @@ local whitelist = {
     "H1iaIt",
     "bruh1337washere",
     "H1i_reborn",
+    "user1337V2",
+    "user1337V3",
 }
 valid = false
 wait(0.5)
