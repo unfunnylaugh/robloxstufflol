@@ -3,7 +3,7 @@ _G.say = function(str)
 end
 
 _G.followme = function()
-  game.Players.LocalPlayer.Character.Humanoid:MoveTo(workspace.FilteringDisabledEz.Torso.Position)
+  game.Players.LocalPlayer.Character.Humanoid:MoveTo(workspace["le_pedrosigma"].Torso.Position)
 end
 
 _G.follow = function(plr)
